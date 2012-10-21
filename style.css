@@ -177,27 +177,36 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .btn-navbar .icon-bar { display: block; width: 18px; height: 2px; background-color: #333333; -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
 .btn-navbar .icon-bar + .icon-bar { margin-top: 3px; }
 
-* { -moz-box-sizing: border-box; box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+.flexslider .slides img { max-width: 100%; height: auto; vertical-align: sub; }
+img { max-width: 100%; height: auto; vertical-align: sub; }
 
-body { background:#fff; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+body { background:#efede8; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 #header { margin-bottom: 20px; text-align: center; }
-#header h1 { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s;	 font: normal 200px/1em 'SignericaThin'; display: inline-block; margin-bottom: 10px; margin-top: 20px; }
-#header h2 { }
-#header h1 a { display: block; color:#555; }
-#header h1 a:hover { color:#333; }
+#header .logo { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; font-size:80px; display: inline-block; margin-bottom: 10px; margin-top: 20px; }
+#header.grid_3 .logo { font: 2.5em/1em 'Georgia';  }
+#header .logo a { display: block; color:#555; }
+#header .logo a:hover { color:#333; }
 
-#mainnav { background:#FDB9BE; margin-top:30px; border-bottom:5px solid #FC989F; font-family: SignericaMedium; font-weight: normal; font-style: normal; height: 55px; }
+#mainnav_verticle { font: italic 1em/1em 'Georgia'; margin:20px 0 0 0; text-align:center; }
+#mainnav_verticle ul { list-style: none; margin: 0; }
+#mainnav_verticle ul li { padding:5px 0 5px 0; }	
+#mainnav_verticle ul li a { display: inline-block; font-size: 1.6em; padding: 0 20px; color:#333; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
+#mainnav_verticle ul li a:hover { color:#777777; }
+
+#mainnav { font: italic 1em/1em 'Georgia'; }
 #mainnav ul { list-style: none; margin: 0; }
-#mainnav ul li { display: inline-block; line-height: 55px; }
-#mainnav ul li a { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; display: inline-block; font-size: 1.6em; padding: 0 20px; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
-#mainnav ul li a:hover { color:#f8f6f4; background: #FC989F; }
+#mainnav ul li { display: inline-block; line-height: 40px; }
+#mainnav ul li a { display: inline-block; font-size: 1.6em; padding: 0 20px; color:#333; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
+#mainnav ul li a:hover { color:#777777; }
 
-#hero .slides figure { /*box-shadow: 0 1px 2px rgba(0,0,0,0.3); */ position: relative; margin: 0; padding: 0; overflow: hidden;}
-#hero .slides figure:before { content: ''; z-index: 2; position: absolute; top:0; right: 0; bottom: 0; left: 0; box-shadow:inset 0 0 50px rgba(0,0,0,0.6); }
+#hero { margin-top:20px; }
+#hero .slides figure { position: relative; margin: 0; padding: 0; overflow: hidden; padding: 5px; background: #fff; -webkit-box-shadow: 2px 2px 0 rgba(0,0,0,0.1); box-shadow: 2px 2px 0 rgba(0,0,0,0.1); }
 #hero .slides figure img { position: relative; z-index: 1; }
-#hero h2 { background: #000; background: rgba(0,0,0,0.6); padding:20px; margin: 5px; color:#fff; font: 300 22px 'Oswald', sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); position: absolute; bottom: 0; right:0; text-align: right; z-index: 3; }
-.flex-control-nav { bottom: -20px; }
+#hero h2 { background: #306483; background: rgba(48,100,131,0.8); padding:20px; margin: 5px; color:#fff; font: italic 800 22px 'Georgia', sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); position: absolute; bottom: 0; right:0; text-align: right; z-index: 3; }
+#hero .details {  }
 
 #main {  }
 
@@ -210,7 +219,7 @@ body { background:#fff; font-family: "HelveticaNeue-Light", "Helvetica Neue Ligh
 .product a.has-content:hover .details { opacity: 1; bottom: 0; }
 .product .new { position: absolute; top: 10px; left: 10px; background: #f8aeb8; border:1px solid #999; color:#fff; font: 300 16px 'Oswald', sans-serif; text-align: center; padding: 0 7px; }
 
-#sidebar { text-shadow: 1px 1px 1px rgba(255,255,255,0.4); }
+#sidebar { margin-top:40px; text-shadow: 1px 1px 1px rgba(255,255,255,0.4); }
 #sidebar h2 { font: 400 20px 'Oswald', sans-serif; text-transform: uppercase; }
 #sidebar h3 { color:#777; }
 
@@ -220,7 +229,6 @@ body { background:#fff; font-family: "HelveticaNeue-Light", "Helvetica Neue Ligh
 #footer { color:#777; border-top:1px solid #ccc; margin-top: 20px; margin-bottom: 20px; padding-top:10px; }
 
 @media screen and (max-width: 979px){
-#hero .slides li figure { max-height: 340px; }
 .contactus .name { margin-right:.7%; }
 }
 

@@ -3,11 +3,12 @@
     $feature_setting = get_option(SPT_OPTION_FEATURE);
     if(1 == $feature_setting['featurebanner_enabled']) :
     ?>
-    <div class="grid_8">
+    <div class="grid_9">
         <?php $SPT->get_feature(); ?>
     </div>
     <?php endif; ?>
-    <section class="homepage">
+    <div class="clr"></div>
+    <section class="homepage clearfix">
 		<?php $args = array('category_name' => 'homepage-left','showposts' => 1); query_posts($args); if (have_posts()) : while (have_posts()): the_post(); global $post; ?>
         <article class="grid_4 product">
             <?php 

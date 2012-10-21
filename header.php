@@ -19,7 +19,12 @@
 
 <body>
 <div class="container">
-	<header id="header" class="grid_4">
-		<?=$SPT->get_site_logo();?>
-		<?=$SPT->get_menu('mainnav');?>
+	<?php 
+	$feature_setting = get_option(SPT_OPTION_FEATURE); 
+	$layout_class = (1 == $feature_setting['featurebanner_enabled'])? 'grid_3' : 'grid_12'; 
+	$menu_id = (1 == $feature_setting['featurebanner_enabled'])? 'mainnav_verticle' : 'mainnav';
+	?>
+	<header id="header" class="<?php echo $layout_class; ?>">
+		<?php echo $SPT->get_site_logo();?>
+		<?php echo $SPT->get_menu($menu_id);?>
 	</header>

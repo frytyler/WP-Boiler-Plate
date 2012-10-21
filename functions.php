@@ -293,9 +293,9 @@ class SPT {
 
 	function get_site_logo() {
 		$spt_logo = get_option(SPT_OPTION_LOGO);
-		$spt_logo = ($spt_logo)? $spt_logo : bloginfo('name');
+		$spt_logo = ($spt_logo)? $spt_logo : get_bloginfo('name');
 		?>
-		<h1><a href="<?=SPT_HOME;?>"><?php echo $spt_logo; ?></a></h1>
+		<h1 class="logo"><a href="<?=SPT_HOME;?>"><?php echo $spt_logo; ?></a></h1>
 		<?php
 	}
 
@@ -304,8 +304,7 @@ class SPT {
 		$main_menu = $wpdb->get_row("SELECT * FROM $wpdb->terms WHERE name ='MainMenu';");
 		if ($main_menu) {
 			$menu_items = wp_get_nav_menu_items($main_menu->term_id);
-			$class = ('mainnav' == $nav_id)? 'class="grid_12"' : NULL;
-			$menu_list = '<nav id="'.$nav_id.'" '.$class.'>
+			$menu_list = '<nav id="'.$nav_id.'">
 							<a href="#" class="btn btn-navbar left">
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
