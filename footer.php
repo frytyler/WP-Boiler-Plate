@@ -4,5 +4,6 @@
 	<p><?=$footer_settings['copyright'];?></p>
 </footer>
 <?php wp_footer(); ?>
+</div>
 </body>
 </html>

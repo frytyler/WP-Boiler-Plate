@@ -3,7 +3,7 @@
 global $SPT; 
 ?>
 <?php get_header('sub'); ?>
-<section class="container subpage">
+<section class="subpage">
     <?php if (have_posts()) : the_post(); global $post; ?> 
     <section class="contactus">
     	<article class="grid_12 content">

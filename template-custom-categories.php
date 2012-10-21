@@ -1,7 +1,7 @@
 <?php /* TEMPLATE NAME: CUSTOM CATEGORIES  */ ?>
 
 <?php get_header(); ?>   
-<section class="container subpage">
+<section class="subpage">
     <?php if (have_posts()) : the_post(); ?>
         <div class="grid_12 content">
             <h1><?php the_title(); ?></h1>

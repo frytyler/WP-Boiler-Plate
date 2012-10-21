@@ -291,6 +291,14 @@ class SPT {
 
 	/* FRONT END FUNCTIONS */
 
+	function get_site_logo() {
+		$spt_logo = get_option(SPT_OPTION_LOGO);
+		$spt_logo = ($spt_logo)? $spt_logo : bloginfo('name');
+		?>
+		<h1><a href="<?=SPT_HOME;?>"><?php echo $spt_logo; ?></a></h1>
+		<?php
+	}
+
 	function get_menu($nav_id) { 
 		global $wpdb;
 		$main_menu = $wpdb->get_row("SELECT * FROM $wpdb->terms WHERE name ='MainMenu';");

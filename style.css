@@ -1,48 +1,4 @@
-/*
-Theme Name: Shop 219
-Author: Tyler Fry
-Author URI: http://simplypx.com
-Description: Custom Theme for Shop 219
-Version: 1.0
-*/
 @charset "utf-8";
-
-/* @license
- * MyFonts Webfont Build ID 2374751, 2012-09-29T15:32:51-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: Signerica Fat by Måns Grebäck
- * URL: http://www.myfonts.com/fonts/mawns/signerica/fat/
- * Licensed pageviews: 10,000
- * 
- * Webfont: Signerica Medium by Måns Grebäck
- * URL: http://www.myfonts.com/fonts/mawns/signerica/medium/
- * Licensed pageviews: unspecified
- * 
- * Webfont: Signerica Thin by Måns Grebäck
- * URL: http://www.myfonts.com/fonts/mawns/signerica/thin/
- * Licensed pageviews: unspecified
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2374751
- * Webfonts copyright: Copyright (c) 2011 by M&#x00E5;ns Greb&#x00E4;ck. All rights reserved. PERSONAL USE ONLY! For commercial use, mail mawns@live.se
- * 
- * © 2012 Bitstream Inc
-*/
-
-
-
-  
-@font-face {font-family: 'SignericaFat';src: url('webfonts/243C5F_0_0.eot');src: url('webfonts/243C5F_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/243C5F_0_0.woff') format('woff'),url('webfonts/243C5F_0_0.ttf') format('truetype');} 
-@font-face {font-family: 'SignericaMedium';src: url('webfonts/243C5F_1_0.eot');src: url('webfonts/243C5F_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/243C5F_1_0.woff') format('woff'),url('webfonts/243C5F_1_0.ttf') format('truetype');}
-@font-face {font-family: 'SignericaThin';src: url('webfonts/243C5F_2_0.eot');src: url('webfonts/243C5F_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/243C5F_2_0.woff') format('woff'),url('webfonts/243C5F_2_0.ttf') format('truetype');}
- 
-
 /* CSS Document */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,  dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -59,8 +15,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
 a:focus { border: none; text-decoration: none; outline: none; }
-a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; color: #333; -webkit-transition: color 0.3s ease; -moz-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
-a:hover { text-decoration: none; color: #ffafb8; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; color: #ffffff; -webkit-transition: color 0.3s ease; -moz-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
+a:hover { text-decoration: none; color: #aaaaaa; }
 .left { float: left; }
 .right { float: right; }
 .clr { clear: both; }
@@ -69,7 +25,7 @@ a:hover { text-decoration: none; color: #ffafb8; }
 
 /* Styles Inspired by Bootstrap by Twitter MODIFIED by CRG*/
 p{font-size:0.8125em;font-weight:normal;line-height:1.125em;margin-bottom:0.5625em;}p small{font-size:0.84615384615385em;color:#bfbfbf;}
-h1,h2,h3,h4,h5,h6{font-weight:300;font-family:'Oswald', sans-serif;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
 h1{margin-bottom:1.125em;font-size:1.5em;line-height:1.875em;}h1 small{font-size:0.75em;}
 h2{font-size:1.25em;line-height:1.875em;}h2 small{font-size:0.7em;}
 h3,h4,h5,h6{line-height:1.875em;}
@@ -156,9 +112,9 @@ input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,
 .btn-mini { padding: 2px 6px; font-size: 11px; line-height: 14px; }
 .btn-primary, .btn-primary:hover, .btn-secondary, .btn-secondary:hover, .btn-tertiary, .btn-tertiary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
 .btn-primary.active, .btn-secondary.active, .btn-tertiary.active { color: rgba(255, 255, 255, 0.75); }
-.btn-primary { background-color: #FDB9BE; background-image: -moz-linear-gradient(top, #FDB9BE, #FC989F); background-image: -ms-linear-gradient(top, #FDB9BE, #FC989F); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FDB9BE), to(#FC989F)); background-image: -webkit-linear-gradient(top, #FDB9BE, #FC989F); background-image: -o-linear-gradient(top, #FDB9BE, #FC989F); background-image: linear-gradient(top, #FDB9BE, #FC989F); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#FDB9BE, endColorstr=#FC989F, GradientType=0);  border-color: #FC989F #FC989F #FC989F; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #FC989F; }
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #FC989F; }
-.no-cssgradients .btn-primary:active, .no-cssgradients .btn-primary.active { background-color: #FC989F; border: 1px solid #FC989F; }
+.btn-primary { background-color: #2d4787; background-image: -moz-linear-gradient(top, #345197, #2d385e); background-image: -ms-linear-gradient(top, #345197, #2d385e); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#345197), to(#2d385e)); background-image: -webkit-linear-gradient(top, #345197, #2d385e); background-image: -o-linear-gradient(top, #345197, #2d385e); background-image: linear-gradient(top, #345197, #2d385e); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#345197, endColorstr=#2d385e, GradientType=0);  border-color: #2d385e #2d385e #2d385e; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #2d385e; }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #2d385e; }
+.no-cssgradients .btn-primary:active, .no-cssgradients .btn-primary.active { background-color: #2d385e; border: 1px solid #2d385e; }
 .btn-secondary { background-color: #bf1c1c; background-image: -moz-linear-gradient(top, #d42424, #8e0d0d); background-image: -ms-linear-gradient(top, #d42424, #8e0d0d); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d42424), to(#8e0d0d)); background-image: -webkit-linear-gradient(top, #d42424, #8e0d0d); background-image: -o-linear-gradient(top, #d42424, #8e0d0d); background-image: linear-gradient(top, #d42424, #8e0d0d); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#d42424, endColorstr=#8e0d0d, GradientType=0); border-color: #8e0d0d #8e0d0d #8e0d0d; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #8e0d0d; }
 .btn-secondary:hover, .btn-secondary:active, .btn-secondary.active, .btn-secondary.disabled, .btn-secondary[disabled] { filter: none;  background-color: #8e0d0d; }
 .no-cssgradients .btn-secondary:active, .no-cssgradients .btn-secondary.active { background-color: #8e0d0d; border: 1px solid #8e0d0d; }
@@ -197,7 +153,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .btn-small .caret { margin-top: 6px; }
 .btn-large .caret { margin-top: 6px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #000000; }
 .btn-primary .caret, .btn-warning .caret, .btn-danger .caret, .btn-info .caret, .btn-success .caret, .btn-inverse .caret { border-top-color: #ffffff; border-bottom-color: #ffffff; opacity: 0.75;  filter: alpha(opacity=75); }
-.alert { font-size: 0.8125em; padding: 8px 35px 8px 14px; margin-bottom: 18px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); background-color: #fcf8e3; border: 1px solid #fbeed5; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #c09853; }
+.alert { padding: 8px 35px 8px 14px; margin-bottom: 18px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); background-color: #fcf8e3; border: 1px solid #fbeed5; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #c09853; }
 .alert-heading { color: inherit; }
 .alert .close { position: relative; top: -2px; right: -21px; line-height: 18px; }
 .alert-success { background-color: #dff0d8; border-color: #d6e9c6; color: #468847; }
@@ -206,9 +162,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .alert-block { padding-top: 14px; padding-bottom: 14px; }
 .alert-block > p, .alert-block > ul { margin-bottom: 0; }
 .alert-block p + p { margin-top: 5px; }
-.btn-navbar { display: none; padding: 7px 10px; margin: 6px 5px; border: 1px solid #FC989F; border: 1px solid rgba(0, 0, 0, 0.1); background-color: #eaeaea; background-color: #FDB9BE; background-image: -moz-linear-gradient(top, #FDB9BE, #FC989F); background-image: -ms-linear-gradient(top, #FDB9BE, #FC989F); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FDB9BE), to(#FC989F)); background-image: -webkit-linear-gradient(top, #FDB9BE, #FC989F); background-image: -o-linear-gradient(top, #FDB9BE, #FC989F); background-image: linear-gradient(top, #FDB9BE, #FC989F); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#FDB9BE, endColorstr=#FC989F, GradientType=0); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(0, 0, 0, 0.3); -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(0, 0, 0, 0.3); -o-box-shadow: inset 0 1px 0 rgba(255, 255, 3, 0.9), 0 1px 0 rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(0, 0, 0, 0.3); }
-.btn-navbar:hover, .btn-navbar:active, .btn-navbar.active, .btn-navbar.disabled, .btn-navbar[disabled] { background-color: #FC989F; }
-.btn-navbar:active, .btn-navbar.active { background-color: #FC989F \9; }
+.btn-navbar { display: none; padding: 7px 10px; margin: 6px 5px; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.1); background-color: #eaeaea; background-color: #eaeaea; background-image: -moz-linear-gradient(top, #eaeaea, #dedede); background-image: -ms-linear-gradient(top, #eaeaea, #dedede); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eaeaea), to(#dedede)); background-image: -webkit-linear-gradient(top, #eaeaea, #dedede); background-image: -o-linear-gradient(top, #eaeaea, #dedede); background-image: linear-gradient(top, #eaeaea, #dedede); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#eaeaea, endColorstr=#dedede, GradientType=0); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.5); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.5); -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.5); -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.5); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.5); }
+.btn-navbar:hover, .btn-navbar:active, .btn-navbar.active, .btn-navbar.disabled, .btn-navbar[disabled] { background-color: #dddddd; }
+.btn-navbar:active, .btn-navbar.active { background-color: #080808 \9; }
 .btn-navbar .icon-bar { display: block; width: 18px; height: 2px; background-color: #333333; -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
 .btn-navbar .icon-bar + .icon-bar { margin-top: 3px; }
 
