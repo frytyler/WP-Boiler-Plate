@@ -24,8 +24,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
 a:focus { border: none; text-decoration: none; outline: none; }
-a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; color: #ffffff; -webkit-transition: color 0.3s ease; -moz-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
-a:hover { text-decoration: none; color: #aaaaaa; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; color: #306483; -webkit-transition: color 0.3s ease; -moz-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
+a:hover { text-decoration: none; color: #1a4660; }
 .left { float: left; }
 .right { float: right; }
 .clr { clear: both; }
@@ -33,7 +33,7 @@ a:hover { text-decoration: none; color: #aaaaaa; }
 .show { display: block; }
 
 /* Styles Inspired by Bootstrap by Twitter MODIFIED by CRG*/
-p{font-size:0.8125em;font-weight:normal;line-height:1.125em;margin-bottom:0.5625em;}p small{font-size:0.84615384615385em;color:#bfbfbf;}
+p{font-size:0.875em;font-weight:normal;line-height:1.25em;margin-bottom:0.5625em;}p small{font-size:0.84615384615385em;color:#bfbfbf;}
 h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
 h1{margin-bottom:1.125em;font-size:1.5em;line-height:1.875em;}h1 small{font-size:0.75em;}
 h2{font-size:1.25em;line-height:1.875em;}h2 small{font-size:0.7em;}
@@ -42,7 +42,7 @@ h3{font-size:1.125em;}h3 small{font-size:0.77777777777778em;}
 h4{font-size:1em;}h4 small{font-size:0.75em;}
 h5{font-size:0.875em;}
 h6{font-size:0.8125em;color:#bfbfbf;text-transform:uppercase;}
-ul,ol{margin:0 0 18px 25px; font-size:0.8125em;}
+ul,ol{margin:0 0 18px 25px; font-size:0.875em;}
 ul ul,ul ol,ol ol,ol ul{margin-bottom:0; font-size:1em;}
 ul{list-style:disc;}
 ol{list-style:decimal;}
@@ -184,40 +184,27 @@ img { max-width: 100%; height: auto; vertical-align: sub; }
 
 body { background:#efede8; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-#header { margin-bottom: 20px; text-align: center; }
-#header .logo { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; font-size:80px; display: inline-block; margin-bottom: 10px; margin-top: 20px; }
-#header.grid_3 .logo { font: 2.5em/1em 'Georgia';  }
+#header { margin-bottom: 20px; }
+#header .logo { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; font-size:30px; display: inline-block; margin-top: 20px; margin-bottom: 0; }
 #header .logo a { display: block; color:#555; }
 #header .logo a:hover { color:#333; }
 
-#mainnav_verticle { font: italic 1em/1em 'Georgia'; margin:20px 0 0 0; text-align:center; }
-#mainnav_verticle ul { list-style: none; margin: 0; }
-#mainnav_verticle ul li { padding:5px 0 5px 0; }	
-#mainnav_verticle ul li a { display: inline-block; font-size: 1.6em; padding: 0 20px; color:#333; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
-#mainnav_verticle ul li a:hover { color:#777777; }
-
-#mainnav { font: italic 1em/1em 'Georgia'; }
-#mainnav ul { list-style: none; margin: 0; }
+#mainnav { font-family: 'Georgia'; font-style: italic; margin-top:10px; }
+#mainnav ul { list-style: none; margin: 0; font-size: 1em; text-align: right; }
 #mainnav ul li { display: inline-block; line-height: 40px; }
-#mainnav ul li a { display: inline-block; font-size: 1.6em; padding: 0 20px; color:#333; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
+#mainnav ul li a { display: inline-block; padding: 0 10px; color:#306483; text-shadow:1px 1px 1px rgba(255,255,255,0.8); }
+#mainnav ul li:last-child a { padding: 0 0 0 10px; }
 #mainnav ul li a:hover { color:#777777; }
 
 #hero { margin-top:20px; }
 #hero .slides figure { position: relative; margin: 0; padding: 0; overflow: hidden; padding: 5px; background: #fff; -webkit-box-shadow: 2px 2px 0 rgba(0,0,0,0.1); box-shadow: 2px 2px 0 rgba(0,0,0,0.1); }
-#hero .slides figure img { position: relative; z-index: 1; }
+#hero .slides figure img { position: relative; z-index: 1; margin: 0 auto; }
 #hero h2 { background: #306483; background: rgba(48,100,131,0.8); padding:20px; margin: 5px; color:#fff; font: italic 800 22px 'Georgia', sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); position: absolute; bottom: 0; right:0; text-align: right; z-index: 3; }
 #hero .details {  }
 
 #main {  }
 
-.product { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; position: relative; /*background: #fff; padding: 5px;*/  margin-bottom: 20px; overflow: hidden;  text-shadow: 1px 1px 1px rgba(0,0,0,0.5); }
-.product img { max-width: 100%; height: auto; vertical-align: sub; }
-.product h2 { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; background: #000; background: rgba(0,0,0,0.6); padding:10px 20px; color:#fff; font: 300 18px 'Oswald', sans-serif; position: absolute; bottom: 0; right:0; text-align: right; z-index: 3; }
-.product a.has-content:hover h2 { opacity: 0; right: -200px; }
-.product a:hover h2 { color:#FC989F; }
-.product .details { -webkit-transition:all ease 0.3s; -moz-transition:all ease 0.3s; transition:all ease 0.3s; opacity: 0; position: absolute; bottom: -200px; left: 0; right: 0; background: #000; background: rgba(0,0,0,0.6); padding:10px; color:#fff; font-size:0.8125em; }
-.product a.has-content:hover .details { opacity: 1; bottom: 0; }
-.product .new { position: absolute; top: 10px; left: 10px; background: #f8aeb8; border:1px solid #999; color:#fff; font: 300 16px 'Oswald', sans-serif; text-align: center; padding: 0 7px; }
+.homepage img, .subpage img { padding: 5px; background: #fff; -webkit-box-shadow: 2px 2px 0 rgba(0,0,0,0.1); box-shadow: 2px 2px 0 rgba(0,0,0,0.1); }
 
 #sidebar { margin-top:40px; text-shadow: 1px 1px 1px rgba(255,255,255,0.4); }
 #sidebar h2 { font: 400 20px 'Oswald', sans-serif; text-transform: uppercase; }

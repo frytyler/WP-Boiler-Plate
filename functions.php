@@ -295,7 +295,7 @@ class SPT {
 		$spt_logo = get_option(SPT_OPTION_LOGO);
 		$spt_logo = ($spt_logo)? $spt_logo : get_bloginfo('name');
 		?>
-		<h1 class="logo"><a href="<?=SPT_HOME;?>"><?php echo $spt_logo; ?></a></h1>
+		<h1 class="grid_6 logo"><a href="<?=SPT_HOME;?>"><?php echo $spt_logo; ?></a></h1>
 		<?php
 	}
 
@@ -304,7 +304,7 @@ class SPT {
 		$main_menu = $wpdb->get_row("SELECT * FROM $wpdb->terms WHERE name ='MainMenu';");
 		if ($main_menu) {
 			$menu_items = wp_get_nav_menu_items($main_menu->term_id);
-			$menu_list = '<nav id="'.$nav_id.'">
+			$menu_list = '<nav id="'.$nav_id.'" class="grid_6">
 							<a href="#" class="btn btn-navbar left">
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
@@ -312,7 +312,7 @@ class SPT {
 						    </a>
 						    <div class="clr"></div>
 						    <ul>
-						    	<li><a href="'.SPT_HOME.'">Shop</a></li>';
+						    	<li><a href="'.SPT_HOME.'">Home</a></li>';
 			foreach ( (array) $menu_items as $key => $menu_item ) {
 				$menu_id = $menu_item->object_id;
 				$title = $menu_item->title;

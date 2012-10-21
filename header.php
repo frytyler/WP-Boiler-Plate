@@ -20,11 +20,9 @@
 <body>
 <div class="container">
 	<?php 
-	$feature_setting = get_option(SPT_OPTION_FEATURE); 
-	$layout_class = (1 == $feature_setting['featurebanner_enabled'])? 'grid_3' : 'grid_12'; 
-	$menu_id = (1 == $feature_setting['featurebanner_enabled'])? 'mainnav_verticle' : 'mainnav';
+	$feature_setting = get_option(SPT_OPTION_FEATURE);
 	?>
-	<header id="header" class="<?php echo $layout_class; ?>">
+	<header id="header" class="clearfix">
 		<?php echo $SPT->get_site_logo();?>
-		<?php echo $SPT->get_menu($menu_id);?>
+		<?php echo $SPT->get_menu('mainnav');?>
 	</header>
