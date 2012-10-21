@@ -19,6 +19,7 @@
 
 <body>
 <div class="container">
+	asd
 	<header id="header" class="grid_4">
 		<?=$SPT->get_site_logo();?>
 		<?=$SPT->get_menu('mainnav');?>
